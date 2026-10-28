@@ -1,0 +1,63 @@
+:root {
+  --header-size-buttom: 24px;
+  --header-padding: 24px 20px;
+  --header-logo: 38px;
+
+  --background-image-height: 480px;
+  --background-image-margin-top: -86px;
+  --background-position: center top;
+
+  --card-width: 280px;
+
+  --card-column-gap: 20px;
+  --card-row-gap: 16px;
+  --card-column-count: 1;
+
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  --detals-img-width-first: 130px;
+  --detals-img-height-first: 130px;
+  --detals-img-width-second: 130px;
+  --detals-img-height-second: 130px;
+}
+
+@media (min-width: 744px) {
+  :root {
+    --header-padding: 36px 72px;
+
+    --background-image-margin-top: -128px;
+    --background-image-height: 628px;
+    --background-position: center top;
+
+    --card-width: 484px;
+
+    --detals-img-width-first: 184px;
+    --detals-img-height: 130px;
+
+    --detals-img-width-first: 392px;
+    --detals-img-height-first: 187px;
+    --detals-img-width-second: 187px;
+    --detals-img-height-second: 184px;
+  }
+}
+
+@media (min-width: 1260px) {
+  :root {
+    --header-padding: 36px 120px;
+
+    --background-image-margin-top: -160px;
+    --background-image-height: 100vh;
+    --background-position: center center;
+
+    --card-column-count: 3;
+
+    --card-width: 424px;
+
+    --detals-img-width-first: 672px;
+    --detals-img-height-first: 321px;
+    --detals-img-width-second: 324px;
+    --detals-img-height-second: 320px;
+  }
+}

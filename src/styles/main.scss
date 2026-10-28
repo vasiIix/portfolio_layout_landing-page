@@ -1,0 +1,127 @@
+@use 'variavels/variabel-colors' as colors;
+@use 'variavels/variabel-sizes';
+@use 'variavels/variabel-text';
+
+@use 'bloks/header';
+@use 'bloks/header-aside';
+@use 'bloks/main/cards-grid';
+@use 'bloks/main/compare_bikes';
+@use 'bloks/main/page-section';
+@use 'bloks/main/feature';
+
+main {
+  display: block;
+}
+
+body {
+  margin: 0;
+  background-color: colors.$background-color;
+}
+
+* {
+  margin: 0;
+}
+
+.background-image {
+  display: flex;
+
+  height: var(--background-image-height);
+  justify-content: center;
+  align-items: center;
+
+  margin-top: var(--background-image-margin-top);
+
+  background-image: url(../images/Cover_photo.png);
+  background-position: var(--background-position);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media (max-width: 1259px) {
+  .background-image {
+    background-color: colors.$background-color;
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 743px) {
+  .background-image {
+    background-position: right center;
+    background-size: auto 100%;
+  }
+}
+
+.heading {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: var(--head-font-size);
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 170px;
+  color: colors.$text-color;
+
+  --head-font-size: 36px;
+
+  @media (min-width: 744px) {
+    --head-font-size: 64px;
+  }
+
+  @media (min-width: 1260px) {
+    --head-font-size: 80px;
+  }
+}
+
+.details,
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 92px 20px 0;
+  &__h {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: colors.$text-color;
+  }
+}
+
+.details {
+  &__h {
+    margin-bottom: 8px;
+  }
+
+  &__buttom {
+    width: 278px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-bottom: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: colors.$menu-text-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.footer-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

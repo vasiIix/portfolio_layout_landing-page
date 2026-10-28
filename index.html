@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="src/styles/main.scss"
+    />
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a
+        class="header-logo"
+        href="#"
+        aria-label="MyBike home"
+      >
+        <img
+          class="logo-icon"
+          src="src/images/MyBiKE.svg"
+          alt="logo"
+        />
+      </a>
+      <input
+        class="checkbox-input"
+        type="checkbox"
+        id="aside-toggle"
+        aria-label="Toggle navigation menu"
+        aria-controls="main-menu"
+      />
+      <div class="buttom-bar">
+        <a
+          class="header-phone"
+          href="tel:+12345555555"
+          aria-label="Call +1 234 5555-55-55"
+        >
+          <img
+            class="phone-icon"
+            src="src/images/phone.svg"
+            alt="phone"
+          />
+        </a>
+        <label
+          class="checkbox"
+          for="aside-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="burger-icon"></span>
+        </label>
+      </div>
+
+      <aside
+        class="aside"
+        id="main-menu"
+      >
+        <a
+          class="menu-header"
+          href="#"
+        >
+          <img
+            class="header-icon"
+            src="src/images/MyBiKE-blak.svg"
+            alt="logo"
+          />
+        </a>
+        <nav class="nav">
+          <ul>
+            <li class="nav__item">
+              <a class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">Compare Bikes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">Details</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link">Contacts</a>
+            </li>
+          </ul>
+          <address class="nav__address">
+            <div>
+              <a
+                class="nav__address--numbe"
+                href="#"
+              >
+                +1 234 5555-55-55
+              </a>
+            </div>
+            <div>
+              <a
+                class="nav__address--descriptions"
+                href="#"
+              >
+                Book a test ride
+              </a>
+            </div>
+          </address>
+        </nav>
+      </aside>
+    </header>
+
+    <main>
+      <div class="background-image">
+        <h1 class="heading">Take the Streets</h1>
+      </div>
+      <section class="topic">
+        <h2 class="topic__header text--heading">Move Free</h2>
+        <p class="topic__p">
+          Shift your ride, not gears. Find the fastest way to move in the city
+          as the bike adapts intuitively to power the speed you need.
+        </p>
+      </section>
+
+      <section class="catalog">
+        <h2 class="text--heading">Compare bikes</h2>
+        <div class="cards-grid cards-grid--bike">
+          <article class="compare-bikes">
+            <img
+              class="compare-bikes__img"
+              src="./src/images/byks/Sporty4.png"
+              alt="byk"
+            />
+            <h3 class="compare-bikes__name text--accent text--accent--color">
+              Sporty 4
+            </h3>
+            <p
+              class="compare-bikes__detals text--description text--description--color"
+            >
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+            <p class="compare-bikes__pryse text--accent text--accent--color">
+              $ 2 590
+            </p>
+          </article>
+          <article class="compare-bikes">
+            <img
+              class="compare-bikes__img"
+              src="./src/images/byks/Ride_in_town_ST.png"
+              alt="byk"
+            />
+            <h3 class="compare-bikes__name text--accent text--accent--color">
+              Sporty 4
+            </h3>
+            <p
+              class="compare-bikes__detals text--description text--description--color"
+            >
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+            <p class="compare-bikes__pryse text--accent text--accent--color">
+              $ 2 590
+            </p>
+          </article>
+          <article class="compare-bikes">
+            <img
+              class="compare-bikes__img"
+              src="./src/images/byks/Agile_ride3.png"
+              alt="byk"
+            />
+            <h3 class="compare-bikes__name text--accent text--accent--color">
+              Sporty 4
+            </h3>
+            <p
+              class="compare-bikes__detals text--description text--description--color"
+            >
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+            <p class="compare-bikes__pryse text--accent text--accent--color">
+              $ 2 590
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="details">
+        <h2 class="text--heading">The details</h2>
+
+        <div class="cards-grid cards-grid--detal">
+          ">
+          <article class="feature">
+            <img
+              class="feature__img feature__img--1"
+              src="./src/images/detals/speedometer.png"
+              alt="speedometer"
+            />
+            <img
+              class="feature__img feature__img--2"
+              src="./src/images/detals/handlebar.png"
+              alt="handlebar"
+            />
+
+            <h3 class="feature__title text--accent text--accent--color">
+              Auto Unlock
+            </h3>
+            <p
+              class="feature__description text--description text--description--color"
+            >
+              The app senses when you're nearby to unlock automatically. GPS
+              tracking so you know where your bike is and can track it anytime.
+            </p>
+          </article>
+          <article class="feature">
+            <img
+              class="feature__img feature__img--1"
+              src="./src/images/detals/rear_light.png"
+              alt="rear_light"
+            />
+            <img
+              class="feature__img feature__img--2"
+              src="./src/images/detals/headlight.png"
+              alt="headlight"
+            />
+
+            <h3 class="feature__title text--accent text--accent--color">
+              Range & Integrated lights
+            </h3>
+            <p
+              class="feature__description text--description text--description--color"
+            >
+              The removable battery has up to 70km battery autonomy and weighs
+              only 2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+          <article class="feature">
+            <img
+              class="feature__img feature__img--1"
+              src="./src/images/detals/brake_lever.png"
+              alt="brake_lever"
+            />
+            <img
+              class="feature__img feature__img--2"
+              src="./src/images/detals/kickstand.png"
+              alt="kickstand"
+            />
+
+            <h3 class="feature__title text--accent text--accent--color">
+              Hydraulic disc brakes & Lightweight
+            </h3>
+            <p
+              class="feature__description text--description text--description--color"
+            >
+              Brakes with total stopping power the second you make contact. The
+              removable battery has up to 70km battery autonomy and weighs only
+              2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+        </div>
+
+        <a
+          class="details__buttom"
+          href="#"
+        >
+          Explore
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <section class="contakts">
+        <h2 class="contakts__h">Contact us</h2>
+        <form
+          class="masseg-form masseg-form--position"
+          onsubmit="
+            this.reset();
+            return false;
+          "
+        >
+          <input
+            class="masseg-form--input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            aria-label="Your name"
+            required
+          />
+          <input
+            class="masseg-form--input"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            aria-label="Email"
+            required
+          />
+          <textarea
+            class="masseg-form--input masseg-form--message"
+            name="message"
+            placeholder="Your message"
+            aria-label="Message"
+            required
+          ></textarea>
+          <button
+            class="masseg-form--button"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+        <address class="address address--position">
+          <h6 class="address--h6">Phone</h6>
+          <p class="address--p">
+            <a href="tel:+12345555555">+1 234 5555-55-55</a>
+          </p>
+          <h6 class="address--h6">Email</h6>
+          <p class="address--p">
+            <a href="mailto:hello@miami.com">hello@miami.com</a>
+          </p>
+          <h6 class="address--h6">Address</h6>
+          <p class="address--p">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=400+First+Ave%2C+Suite+700%2C+Minneapolis%2C+MN+55401"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              400 first ave.
+              <br />
+              suite 700
+              <br />
+              Minneapolis, MN 55401
+            </a>
+          </p>
+        </address>
+      </section>
+      <img
+        class="footer-img"
+        src="./src/images/footer.png"
+        alt="footer"
+      />
+    </footer>
+  </body>
+</html>

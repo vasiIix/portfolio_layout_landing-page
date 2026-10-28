@@ -1,0 +1,114 @@
+@use '../variavels/variabel-colors' as colors;
+@use '../variavels/variabel-sizes';
+
+.header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--header-padding);
+
+  .header-logo {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .logo-icon {
+    display: block;
+    width: auto;
+    height: var(--header-logo);
+  }
+}
+
+@media (min-width: 744px) {
+  .header {
+    --header-logo: 56px;
+  }
+}
+
+.buttom-bar {
+  --header-action-icon-size: 24px;
+
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  gap: 0;
+  align-items: center;
+
+  .header-phone,
+  .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .header-phone {
+    text-decoration: none;
+  }
+
+  .phone-icon {
+    display: block;
+    width: var(--header-action-icon-size);
+    height: var(--header-action-icon-size);
+  }
+
+  .checkbox {
+    cursor: pointer;
+  }
+
+  .burger-icon {
+    display: block;
+
+    aspect-ratio: 3 / 2;
+    width: var(--header-action-icon-size);
+
+    background-image: url(../images/hamburger-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 744px) {
+  .buttom-bar {
+    --header-action-icon-size: 32px;
+  }
+}
+
+.checkbox-input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  appearance: none;
+  opacity: 0;
+}
+
+.checkbox-input:focus-visible + .buttom-bar .checkbox {
+  outline: 2px solid colors.$text-color;
+  outline-offset: 2px;
+}
+
+.checkbox-input:checked {
+  & ~ .aside {
+    transform: translateX(0%);
+  }
+
+  & + .buttom-bar {
+    .header-phone {
+      visibility: hidden;
+    }
+
+    .burger-icon {
+      background-image: url(../images/close.svg);
+      background-size: var(--header-action-icon-size);
+    }
+  }
+}

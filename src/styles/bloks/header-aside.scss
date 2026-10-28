@@ -1,0 +1,124 @@
+@use '../variavels/variabel-colors' as colors;
+@use '../variavels/variabel-sizes';
+
+.aside {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+
+  overflow: auto;
+
+  height: 100vh;
+
+  background-color: colors.$background-menu-color;
+
+  transition: transform 0.3s;
+}
+
+.menu-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: var(--header-padding);
+
+  background-color: colors.$background-menu-color;
+
+  .header-icon {
+    display: block;
+    width: auto;
+    height: var(--header-logo);
+  }
+}
+
+.nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: left;
+
+    margin-top: 24px;
+    margin-left: 20px;
+    padding: 0;
+
+    list-style: none;
+  }
+  &__link {
+    position: relative;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    color: colors.$menu-text-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: middle;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    margin-top: 40px;
+    margin-left: 20px;
+
+    &--descriptions,
+    &--numbe {
+      position: relative;
+
+      font-weight: 600;
+      color: colors.$menu-text-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &--numbe {
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0;
+    }
+
+    &--descriptions {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .nav__link::after,
+  .nav__address--numbe::after,
+  .nav__address--descriptions::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+
+    display: block;
+
+    width: 100%;
+    border: 1px colors.$menu-text-color solid;
+
+    transition: transform 0.3s;
+  }
+  .nav__link:hover::after,
+  .nav__address--numbe:hover::after,
+  .nav__address--descriptions:hover::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0.98);
+
+    border: 1px colors.$menu-text-color solid;
+  }
+}

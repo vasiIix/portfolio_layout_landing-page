@@ -1,0 +1,36 @@
+@use '../../variavels/variabel-colors.scss' as colors;
+
+.compare-bikes {
+  display: grid;
+  align-items: start;
+
+  grid-template-areas:
+    'img'
+    'name'
+    'detals'
+    'pryse';
+  &__img {
+    margin-inline: auto;
+    grid-area: img;
+  }
+
+  &__name {
+    margin-top: 32px;
+    grid-area: name;
+  }
+  &__pryse {
+    margin-top: 16px;
+    grid-area: pryse;
+  }
+
+  &__detals {
+    margin-top: 8px;
+    grid-area: detals;
+  }
+  .text--accent--color {
+    color: colors.$text-color;
+  }
+  .text--description--color {
+    color: colors.$text-color;
+  }
+}
