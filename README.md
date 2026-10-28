@@ -1,6 +1,6 @@
-# Назва проєкту
+# MyBike Store
 
-Короткий опис проєкту: чим він займається, яку проблему вирішує.
+This project showcases a modern bike store website designed to help users discover high-quality bicycles and cycling accessories for their needs. The site provides detailed descriptions of bicycle categories, a dynamic product section, and an engaging user interface.
 
 ## Live Preview
 
@@ -15,12 +15,3 @@
 - HTML5
 - CSS3
 - (SCSS)
-
-## Getting Started
-
-1. Клонуй репозиторій:
-
-```bash
-git clone https://github.com/your-username/project-name.git
-cd project-name
-```
